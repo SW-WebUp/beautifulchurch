@@ -71,7 +71,7 @@ border-radius: 10px;
 
 .navbar-nav {
     display: flex;
-    justify-content: center; /* 가로 방향 가운데 정렬 */
+    /*justify-content: center; /* 가로 방향 가운데 정렬 */
     width: 100%; /* 전체 너비 사용 */
 }
 

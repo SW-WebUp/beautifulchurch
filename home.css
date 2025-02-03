@@ -6,6 +6,7 @@
 @import url('https://getbootstrap.com/docs/5.3/assets/css/docs.css');
 
 
+
 .navbar-nav  {
   --bs-navbar-hover-color: rgb(174, 255, 0);
 
@@ -37,7 +38,7 @@ border-radius: 10px;
 
 .navbar-nav {
     display: flex;
-    justify-content: center; /* 가로 방향 가운데 정렬 */
+    /*  justify-content: center; /* 가로 방향 가운데 정렬 */
     width: 100%; /* 전체 너비 사용 */
 }
 
@@ -168,6 +169,51 @@ border-radius: 10px;
   }
 }
 
+.banner {
+  position: fixed; /* 화면에 고정된 위치에 표시 */
+  top: 10px; /* 화면 상단에서 10px 떨어짐 */
+  right: 10px; /* 화면 오른쪽에서 10px 떨어짐 */
+  background: linear-gradient(135deg, #4e82b1, #c8e397); /* 푸른색과 연두색 그라디언트 */
+  color: #ffffff; /* 텍스트 색을 흰색으로 설정 */
+  padding: 20px; /* 내부 여백 */
+  border: 1px solid #4e82b1; /* 푸른색 계열과 일치하는 테두리 색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  display: inline-flex; /* 내용물에 맞춰 너비와 높이가 자동으로 결정되도록 설정 */
+  align-items: center; /* 세로로 중앙 정렬 */
+  justify-content: space-between; /* 내용물 간의 간격 조정 */
+  font-size: 16px;
+  cursor: move; /* 배너를 드래그할 수 있도록 커서 모양 변경 */
+  position: relative; /* X 버튼의 절대 위치 설정을 위한 상대적 기준 */
+  flex-direction: column; /* 세로로 배치 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+  width: auto; /* 너비 자동 조정 */
+  height: auto; /* 높이 자동 조정 */
+  background-size: cover; /* 배경이 배너 크기에 맞게 자동 크기 조정 */
+  background-blend-mode: overlay; /* 배경이 섞여서 더욱 세련된 느낌을 주도록 설정 */
+}
+
+/* 배너에 마우스를 올렸을 때 효과 */
+.banner:hover {
+  background: linear-gradient(135deg, #3b6e92, #a9d56f); /* 더 깊고 세련된 푸른색과 연두색의 변화 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 배너 활성화 시 그림자 효과 강화 */
+}
 
 
 
+
+/* X 버튼 스타일 */
+.close-btn {
+position: absolute; /* 배너 내에서 절대 위치 지정 */
+top: 10px; /* 배너 상단에서 10px 떨어짐 */
+right: 10px; /* 배너 오른쪽에서 10px 떨어짐 */
+cursor: pointer;
+background-color: transparent;
+border: none;
+font-size: 20px;
+color: #fffefe; /* X 버튼 텍스트 색을 흰색으로 */
+font-weight: bold;
+}
+/* 첫 번째 span 스타일 */
+#mySpan {
+  margin: 5px 0; /* 텍스트 간의 간격 설정 */
+}
